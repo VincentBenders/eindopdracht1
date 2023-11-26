@@ -67,6 +67,7 @@ nav {
     gap: 10px;
     padding-bottom: 1vh;
     background-color: #FFFFFF;
+    z-index: 2;
 }
 
 nav a {
@@ -127,7 +128,7 @@ main {
 .items-container {
     display: flex;
     gap: 30px;
-    margin-bottom: 2vh;
+    margin-bottom: 10vh;
 }
 
 .items-container article {
