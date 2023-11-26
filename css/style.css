@@ -21,6 +21,7 @@ h3 {
 }
 
 p {
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
@@ -285,6 +286,8 @@ footer {
     background-color: rgb(26 32 44);
     color: #FFFFFF;
     padding: 3vw 5vh;
+    display: flex;
+    flex-direction: column;
 }
 
 footer .text {
@@ -301,7 +304,7 @@ footer .text {
 
 footer a{
     margin: 16px 0;
-    color: rgb(67, 71, 80);
+    color: rgb(103, 109, 123);
     text-decoration: none;
 }
 
@@ -316,6 +319,9 @@ footer .socials img{
 @media (max-width: 480px) {
     body{
         overflow-x: hidden;
+    }
+    h2 {
+        text-align: center;
     }
     nav{
         position: relative;
@@ -340,6 +346,11 @@ footer .socials img{
     #circleimage {
         display: none;
     }
+    header{
+        
+    background-size: cover;
+    background-position: center;
+    }
     main {
         width: 100vw;
     }
@@ -357,11 +368,18 @@ footer .socials img{
     }
     .radio .formfield{
         width: 45vw;
+        flex-direction: column;
     }
     .radio{
         flex-direction: column;
     }
     #checkbox{
         padding: 1vh 1vw;
+    }
+    .text {
+        flex-direction: column;        
+    }
+    .links {
+        flex-direction: column;
     }
 }
