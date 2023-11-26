@@ -42,26 +42,31 @@
 
                 <article>
                     <div class="item-content">
-                        <img src="images/wolf_knights_greatsword.png" alt="">
-
-
-                        <h3>Wolf Knights Greatsword</h3>
-                        <div class="stars">
-                            <img src="images/icons8-star-48.png" alt="">
-                            <img src="images/icons8-star-48.png" alt="">
-                            <img src="images/icons8-star-48.png" alt="">
-                            <img src="images/icons8-star-48.png" alt="">
-                            <img src="images/icons8-star-48.png" alt="">
+                        <div class="item-picture">
+                            <img src="images/wolf_knights_greatsword.png" alt="">
                         </div>
-                        <p>The wolf knight was the first Abyss Watcher, and his sword is more punishing against creations of the abyss. </p>
+
+                        <div class="item-body">
+                            <h3>Wolf Knights Greatsword</h3>
+                            <div class="stars">
+                                <img src="images/icons8-star-48.png" alt="">
+                                <img src="images/icons8-star-48.png" alt="">
+                                <img src="images/icons8-star-48.png" alt="">
+                                <img src="images/icons8-star-48.png" alt="">
+                                <img src="images/icons8-star-48.png" alt="">
+                            </div>
+                            <p>The wolf knight was the first Abyss Watcher, and his sword is more punishing against creations of the abyss. </p>
+                        </div>
+                        <a href="#" class="button-default">Bekijk recept</a>
                     </div>
-                    <a href="#" class="button-default">Bekijk recept</a>
                 </article>
 
                 <article>
                     <div class="item-content">
-                        <img src="images/dragonslayer_greataxe.png" alt="">
-
+                        <div class="item-picture">
+                            <img src="images/dragonslayer_greataxe.png" alt="">
+                        </div>
+                        <div class="item-body">
                         <h3>Dragonslayer Greataxe</h3>
                         <div class="stars">
                             <img src="images/icons8-star-48.png" alt="">
@@ -73,23 +78,27 @@
                         <p>Thickly imbued with the power of lightning. Use skill to draw upon the techniques used to slay the archdragons.</p>
                     </div>
                     <a href="#" class="button-default">Bekijk recept</a>
+                    </div>
                 </article>
 
                 <article>
                     <div class="item-content">
-                        <img src="images/fume_ultra_greatsword.png" alt="">
-
-                        <h3>Fume Ultra Greatsword</h3>
-                        <div class="stars">
-                            <img src="images/icons8-star-48.png" alt="">
-                            <img src="images/icons8-star-48.png" alt="">
-                            <img src="images/icons8-star-48.png" alt="">
-                            <img src="images/icons8-star-26.png" alt="">
-                            <img src="images/icons8-star-26.png" alt="">
+                        <div class="item-picture">
+                            <img src="images/fume_ultra_greatsword.png" alt="">
                         </div>
-                        <p>This weapon, said to belong to a traitor from long ago, was so heavy that it found no owner, and became a forgotten relic of history. </p>
-                    </div>
-                    <a href="#" class="button-default">Bekijk recept</a>
+                        <div class="item-body">
+                            <h3>Fume Ultra Greatsword</h3>
+                            <div class="stars">
+                                <img src="images/icons8-star-48.png" alt="">
+                                <img src="images/icons8-star-48.png" alt="">
+                                <img src="images/icons8-star-48.png" alt="">
+                                <img src="images/icons8-star-26.png" alt="">
+                                <img src="images/icons8-star-26.png" alt="">
+                            </div>
+                            <p>This weapon, said to belong to a traitor from long ago, was so heavy that it found no owner, and became a forgotten relic of history. </p>
+                        </div>
+                        <a href="#" class="button-default">Bekijk recept</a>
+                        </div>
                 </article>
 
             </div>
@@ -99,33 +108,37 @@
     <section>
         <form action="https://docent.cmi.hr.nl/moora/frontend/send-mail.php" method="POST">
             <div class="center-container">
-                <section>
-
                     <h1>Contactformulier</h1>
                     
                     <div class="formfield">
-                        <label for="name">Voornaam</label>
-                        <input type="text" name="name" id="name" placeholder="voer je naam in .." required>
-                  
-                        <label for="woonplaats">Achternaam</label>
-                        <input type="text" name="city" id="city" placeholder="voer je achternaam in .." required>
+                    <div class="subfield" id="firstname">
+                        <label for="firstname">Voornaam</label>
+                        <input type="text" name="name" id="firstname" placeholder="voer je naam in .." required>
+                    </div>
+                    <div class="subfield" id="lastname">
+                        <label for="lastname">Achternaam</label>
+                        <input type="text" name="city" id="lastname" placeholder="voer je achternaam in .." required>
+                    </div>
                     </div>
                    
                     
-                    <div class="formfield">
+                    <div class="formfield" id="email">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="voer je Email in .." required>
                     </div>
 
                     <div class="formfield">
-                        <label for="woonplaats">Woonplaats</label>
-                        <input type="text" name="city" id="city" placeholder="voer je woonplaats in .." required>
-
-                        <label for="birthdate">Geboortedatum</label>
-                        <input type="date" id="birthdate" name="birthdate" required>
+                        <div class="subfield" id="city">
+                            <label for="city">Woonplaats</label>
+                            <input type="text" name="city" id="city" placeholder="voer je woonplaats in .." required>
+                        </div>
+                        <div class="subfield" id="birthdate">
+                            <label for="birthdate">Geboortedatum</label>
+                            <input type="date" id="birthdate" name="birthdate" required>
+                        </div>
                     </div>
 
-                    <div class="formfield">
+                    <div class="formfield" id="topic">
                         <label for="send-to">Onderwerp</label>
                         <select id="send-to" name="docent" required>
                             <option value="" disabled selected>Kies een van het bericht</option>
@@ -136,24 +149,22 @@
                     </div>
 
                     <div class="formfield" id="question">
-                        
                         <label for="question">Bericht</label>
                         <textarea id="question" name="question" placeholder="Jouw vraag" required></textarea>
                     </div>
                     
                     <div class="radio">
                         <label for="category">Categorie</label>
-                        
                         <div class="formfield">
-                            
-                            <input type="radio" id="Algemeen" name="category" value="Algemeen" required>
-                            <label for="Algemeen">Algemeen</label>
-                        </div>
-
-                        <div class="formfield">
-                            
-                            <input type="radio" id="Programmeren" name="category" value="Programmeren" required>
-                            <label for="Programmeren">Programmeren</label>
+                            <div class="subfield">                                
+                                <input type="radio" id="Algemeen" name="category" value="Algemeen" required>
+                                <label for="Algemeen">Algemeen</label>
+                            </div>
+                            <div class="subfield">
+                                <input type="radio" id="Programmeren" name="category" value="Programmeren" required>
+                                <label for="Programmeren">Programmeren</label>
+                            </div>
+          
                         </div>                        
                     </div>
                     
@@ -162,8 +173,8 @@
                         <label for="agree">Ik ga akkord met de algemene voorwaarden*</label>
                     </div>
                     
-                    <button type="submit">Verzenden</button>
-                </section>
+                    <button type="submit" id="submit">Verzenden</button>
+            </div>
         </form>
     </section>
 
@@ -173,12 +184,13 @@
 
         </div>
         <div class="text">
-            <p>Copyright 2023 vincent</p>
-            <div class="links"></div>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
+            <p>Copyright 2023 Vincent</p>
+            <div class="links">
+                <a href="#">Privacyverklaring</a>
+                <a href="#">Algemene voorwaarden</a>
+                <a href="#">Cookiebeleid</a>
+                <a href="#">Contact</a>
+            </div>
         </div>
 
         <div class="socials">
