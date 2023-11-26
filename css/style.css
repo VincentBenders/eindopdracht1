@@ -114,13 +114,6 @@ header .head-column {
     flex: 2;
 }
 
-header img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 header p {
     margin-bottom: 0;
     padding: 0 25vw;
@@ -146,7 +139,6 @@ main {
     border: 1px solid #000000;
     border-radius: 1vw;
 }
-
 
 .item-picture {
     max-width: 30vw;
@@ -310,7 +302,7 @@ footer .text {
 
 footer a{
     margin: 16px 0;
-    color: rgb(98, 105, 120);
+    color: rgb(67, 71, 80);
     text-decoration: none;
 }
 
